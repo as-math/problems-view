@@ -1,0 +1,35 @@
+:host {
+	display: block;
+	border: 2px solid #f7f279;
+	border-radius: 1em;
+	padding: 0.5em;
+	background: #fffdd0;
+}
+:host(:focus) {
+	outline: 2px solid black;
+}
+:host > .details {
+	display: none;
+}
+:host([open]) > .details {
+	display: block;
+}
+::slotted(.answer)::before {
+	content: "Ответ: ";
+	font-weight: bold;
+}
+::slotted(.solution)::before {
+	content: "Решение: ";
+	font-weight: bold;
+}
+::slotted(.comment)::before {
+	content: "Комментарий: ";
+	font-weight: bold;
+}
+::slotted(.source)::before {
+	content: "Источник: ";
+	font-weight: bold;
+}
+hr {
+	border: 1px solid #bbbbbb;
+}

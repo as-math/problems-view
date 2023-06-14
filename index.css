@@ -1,0 +1,12 @@
+#problems {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5em;
+	margin: auto;
+	max-width: 80ch;
+}
+.group-title {
+	font-size: 1.5em;
+	margin: 0;
+	padding: 0;
+}
