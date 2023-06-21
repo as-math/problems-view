@@ -1,0 +1,8 @@
+.problems-group {
+	border: 2px solid #aaaaaa;
+	border-radius: 0.5em;
+}
+
+.problems-group > legend {
+	font-size: 1.2em;
+}

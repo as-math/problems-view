@@ -1,12 +1,3 @@
-#problems {
-	display: flex;
-	flex-direction: column;
-	gap: 0.5em;
-	margin: auto;
-	max-width: 80ch;
-}
-.group-title {
-	font-size: 1.5em;
-	margin: 0;
-	padding: 0;
-}
+@import "problems-container/problems-container.css";
+@import "problem-card/problem-card.css";
+@import "problems-group/problems-group.css";

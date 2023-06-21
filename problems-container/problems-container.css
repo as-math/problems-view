@@ -1,0 +1,10 @@
+.problems-container {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5em;
+}
+
+.problems-container-main {
+	max-width: 80ch;
+	margin: auto;
+}

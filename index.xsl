@@ -15,24 +15,23 @@
 		<title><xsl:value-of select="@title"/></title>
 		<meta charset="UTF-8"/>
 		<link href="{$path}/index.css" rel="stylesheet" />
-		<script type="module" src="{$path}/problem-card.web-component.js"></script>
-		<script src="{$path}/problems-container.js" defer=""></script>
+		<script type="module" src="{$path}/index.js"></script>
 	</head>
 </xsl:template>
 
 <xsl:template name="html_body">
 	<body>
-		<div id="problems">
+		<div class="problems-container problems-container-main">
 			<xsl:apply-templates/>
 		</div>
 	</body>
 </xsl:template>
 
 <xsl:template match="group">
-	<h1 class="group-title">
-		<xsl:value-of select="./@title"/>
-	</h1>
-	<xsl:apply-templates/>
+	<fieldset class="problems-group problems-container">
+		<legend><xsl:value-of select="./@title"/></legend>
+		<xsl:apply-templates/>
+	</fieldset>
 </xsl:template>
 
 <xsl:template match="problem">
