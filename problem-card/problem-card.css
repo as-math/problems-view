@@ -4,6 +4,7 @@
 	border-radius: 1em;
 	padding: 0.5em;
 	background: #fffdd0;
+	text-align: justify;
 }
 :host(:focus) {
 	outline: 2px solid black;
