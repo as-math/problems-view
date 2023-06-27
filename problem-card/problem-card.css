@@ -14,11 +14,6 @@
 :host([open]) > .details {
 	display: block;
 }
-::slotted(.main-text) img {
-	display: block;
-	max-width: 100%;
-	margin-inline: auto;
-}
 ::slotted(.answer)::before {
 	content: "Ответ: ";
 	font-weight: bold;
