@@ -42,31 +42,31 @@
 
 <xsl:template match="problem/text">
 	<div slot="main-text">
-		<xsl:value-of select="."/>
+		<xsl:copy-of select="."/>
 	</div>
 </xsl:template>
 
 <xsl:template match="problem/answer">
 	<div slot="details" class="answer">
-		<xsl:value-of select="."/>
+		<xsl:copy-of select="."/>
 	</div>
 </xsl:template>
 
 <xsl:template match="problem/solution">
 	<div slot="details" class="solution">
-		<xsl:value-of select="."/>
+		<xsl:copy-of select="."/>
 	</div>
 </xsl:template>
 
 <xsl:template match="problem/comment">
 	<div slot="details" class="comment">
-		<xsl:value-of select="."/>
+		<xsl:copy-of select="."/>
 	</div>
 </xsl:template>
 
 <xsl:template match="problem/source">
 	<div slot="details" class="source">
-		<xsl:value-of select="."/>
+		<xsl:copy-of select="."/>
 	</div>
 </xsl:template>
 
