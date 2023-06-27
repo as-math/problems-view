@@ -41,7 +41,7 @@
 </xsl:template>
 
 <xsl:template match="problem/text">
-	<div slot="main-text">
+	<div slot="main-text" class="main-text">
 		<xsl:copy-of select="node() | @*"/>
 	</div>
 </xsl:template>
